@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#ffffff"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_avatar_48dp" />
+
+        <TextView
+            android:id="@+id/createdTv"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Hello World!" />
+
+        <TextView
+            android:id="@+id/contentTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:text="TextView" />
+
+        <ImageButton
+            android:id="@+id/likeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/likeQtyTv"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            app:srcCompat="@drawable/ic_favorite_inactive_24dp" />
+
+        <TextView
+            android:id="@+id/shareQtyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            tools:text="0" />
+
+        <ImageButton
+            android:id="@+id/shareBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/shareQtyTv"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            app:srcCompat="@drawable/ic_share_inactive_24dp" />
+
+        <TextView
+            android:id="@+id/commentQtyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/shareBtn"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            tools:text="0" />
+
+        <ImageButton
+            android:id="@+id/commentBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/commentQtyTv"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            app:srcCompat="@drawable/ic_chat_bubble_inactive_24dp" />
+
+        <TextView
+            android:id="@+id/likeQtyTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toStartOf="@+id/commentBtn"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/authorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            tools:text="Author"
+            android:textColor="#000000"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/createdTv" />
+
+        <ImageButton
+            android:id="@+id/locationBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toStartOf="@+id/likeBtn"
+            app:layout_constraintTop_toBottomOf="@+id/contentTv"
+            app:srcCompat="@drawable/ic_location_on_black_24dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
