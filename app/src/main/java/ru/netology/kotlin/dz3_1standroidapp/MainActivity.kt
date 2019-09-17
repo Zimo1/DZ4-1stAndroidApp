@@ -1,6 +1,5 @@
 package ru.netology.kotlin.dz3_1standroidapp
 
-import android.content.DialogInterface
 import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
@@ -9,11 +8,9 @@ import android.os.Bundle
 import android.view.View
 import android.view.View.INVISIBLE
 import android.view.View.VISIBLE
-import android.widget.Button
 import android.widget.ImageButton
 import kotlinx.android.synthetic.main.activity_main.*
-import ru.netology.kotlin.dz3_1standroidapp.dto.Post
-import kotlin.system.exitProcess
+import ru.netology.kotlin.dz3_1standroidapp.dto.EventPost
 
 class MainActivity : AppCompatActivity() {
     // Цвета для текста

@@ -1,7 +1,8 @@
-package ru.netology.kotlin.dz3_1standroidapp
+package ru.netology.kotlin.dz3_1standroidapp.dto
 
 import ru.netology.kotlin.dz3_1standroidapp.dto.Post
 
+//Класс Событие
 class EventPost (
     id: Long,
     author: String,
